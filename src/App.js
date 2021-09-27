@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import axios from "axios";
 import Characters from "./components/Characters";
-
+import Header from "./components/Header";
 function App() {
   const [data, setData] = useState([]);
 
@@ -17,7 +17,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Hello world</h1>
+      <Header />
       <Characters data={data} />
     </div>
   );

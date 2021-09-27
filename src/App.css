@@ -5,8 +5,8 @@
 }
 
 body {
-  background-image: url("img/background.jpg");
-  background-size: cover;
+  background-image: linear-gradient(20deg, hsl(120, 100%, 0.7%), hsl(120, 100%, 4%), hsl(120, 100%, 1%));
+  background-size: 100%;
   background-repeat: no-repeat;
 }
 
@@ -22,20 +22,47 @@ h4 {
   margin: 0 auto;
 }
 
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 450px;
+  /* border: 2px solid red; */
+}
+
+#search-input {
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  width: 700px;
+  border-radius: 8px;
+  border: 2px solid green;
+}
+
+.logo {
+  max-width: 400px;
+}
+
 .card-wrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  /* grid-template-rows: 4; */
-  grid-gap: 16px;
+  grid-gap: 18px;
 }
 .card {
   position: relative;
-  /* background: #333; */
+  background: rgba(0, 0, 0, 1);
   border-radius: 10px;
+  height: 400px;
+  border: 2px solid hsl(120, 63%, 15%);
+  /* border: 2px solid lightgreen; */
   overflow: hidden;
 }
 .card img {
-  width: 100%;
+  width: 110%;
+}
+.card:hover .content {
+  top: 0;
+  opacity: 1;
 }
 
 .row {
@@ -50,23 +77,33 @@ h4 {
 }
 .content {
   position: absolute;
-  top: 0;
+  top: 79%;
   right: 0;
   bottom: 0;
   left: 0;
   padding: 1rem 0.5rem;
-  background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(4px);
+  background: rgba(1, 1, 1, 0.5);
+  background: rgba(3, 29, 3, 0.5);
+  background-image: linear-gradient(10deg, hsla(120, 100%, 5%, 0.5), hsla(120, 100%, 1%, 0.9));
+
+  /* backdrop-filter: blur(4px); */
   color: white;
+  transition: 0.3s;
   font-family: "@Microsoft Yahei Light";
 }
 
 .season {
-  display: inline-block;
-  background: yellow;
+  /* background-image: linear-gradient(-45deg, green, yellowgreen); */
+  background: gold;
   border-radius: 4px;
-  padding: 4px 5px;
+  width: 30px;
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   margin-right: 10px;
-  color: black;
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+  color: #121212;
   font-weight: bold;
 }

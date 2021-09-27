@@ -37,6 +37,9 @@ const characters = ({ data }) => {
                 </p>
               </div>
               
+              <div className="row">
+                <span>{item.status}</span> 
+              </div>
             </div>
         </div>
       ))}
