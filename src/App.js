@@ -1,16 +1,17 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import axios from "axios";
-import Characters from "./components/Characters";
+import Cards from "./components/Cards";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
+
 function App() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    let url = "https://www.breakingbadapi.com/api/characters";
+    let url = "https://www.breakingbadapi.com/api/characters?limit=12";
 
     axios.get(url).then((response) => {
-      console.log(response.data);
       setData(response.data);
     });
   }, []);
@@ -18,7 +19,8 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Characters data={data} />
+      <Cards data={data} />
+      <Footer />
     </div>
   );
 }

@@ -3,7 +3,7 @@ import React from "react";
 const characters = ({ data }) => {
   return (
     <div className="page-wrapper">
-      <div className="card-wrapper">
+      <div className="cards">
         
       {data.map((item) => (
         <div className="card" key={item.char_id}>

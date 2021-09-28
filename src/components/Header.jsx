@@ -7,6 +7,7 @@ const Header = () => {
             <img className="logo" src={logo} alt="logo" />
             <input type="text" name="search" id="search-input" placeholder="Heisenberg" />
         </header>
+        
     )
 }
 
