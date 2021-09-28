@@ -7,18 +7,19 @@ import Footer from "./components/Footer";
 
 function App() {
   const [data, setData] = useState([]);
+  const [query, setQuery] = useState("");
 
   useEffect(() => {
-    let url = "https://www.breakingbadapi.com/api/characters?limit=12";
+    let url = `https://www.breakingbadapi.com/api/characters?limit=16&name=${query}`;
 
     axios.get(url).then((response) => {
       setData(response.data);
     });
-  }, []);
+  }, [query]);
 
   return (
     <div className="App">
-      <Header />
+      <Header getQuery={(q) => setQuery(q)} />
       <Cards data={data} />
       <Footer />
     </div>
