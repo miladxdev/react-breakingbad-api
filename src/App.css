@@ -4,6 +4,19 @@
   padding: 0;
 }
 
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(120, 100%, 20%);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(120, 100%, 28%);
+}
+::-webkit-scrollbar-track {
+  /* background: #000; */
+}
+
 body {
   background-image: linear-gradient(20deg, hsl(120, 100%, 0.7%), hsl(120, 100%, 4%), hsl(120, 100%, 1%));
   background-size: 100%;
@@ -34,19 +47,19 @@ header img {
   font-size: 2rem;
   margin: 4rem auto;
   padding: 0.5rem 1rem;
-  max-width: 700px;
   border-radius: 8px;
-  border: 2px solid darkgreen;
+  border: 4px solid #006600;
   background: #f1f1f1;
 }
-
+#search-input:focus {
+  outline: 2px solid white;
+}
 .logo {
   max-width: 400px;
 }
 
 .cards {
   display: grid;
-  /* grid-template-columns: repeat(4, 1fr); */
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   grid-gap: 1.5rem;
 }
@@ -54,32 +67,31 @@ header img {
 .card {
   position: relative;
   background: rgba(0, 0, 0, 1);
-  border-radius: 10px;
-  border: 2px solid hsl(120, 100%, 10%);
-  /* border: 2px solid lightgreen; */
+  border-radius: 20px;
+  border: 4px solid hsl(120, 100%, 10%);
   overflow: hidden;
+  /* max-height: 400px; */
 }
 .card img {
   width: 120%;
 }
 .card:hover .content {
   top: 0;
-  opacity: 1;
 }
 
 .row {
   padding: 4px 8px;
   margin-bottom: 8px;
-  border-radius: 14px;
+  border-radius: 10px;
   transition: background 0.2s;
   cursor: pointer;
 }
 .row:hover {
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.6);
 }
 .content {
   position: absolute;
-  top: 79%;
+  top: 82%;
   right: 0;
   bottom: 0;
   left: 0;
@@ -89,12 +101,13 @@ header img {
   color: white;
   transition: 0.3s;
   font-family: "@Microsoft Yahei Light";
-  /* font-size: 100%; */
+  overflow-y: scroll;
 }
 
 .season {
-  /* background-image: linear-gradient(-45deg, green, yellowgreen); */
   background: gold;
+  background-image: linear-gradient(-45deg, green, yellowgreen);
+
   border-radius: 4px;
   width: 30px;
   height: 30px;
@@ -105,7 +118,14 @@ header img {
   margin-bottom: 5px;
   font-size: 1.2rem;
   color: #121212;
+  color: white;
   font-weight: bold;
+}
+
+.season.better-call {
+  /* background: gold; */
+  background-image: linear-gradient(-45deg, rgb(224, 191, 0), yellow);
+  color: #121212;
 }
 
 footer {

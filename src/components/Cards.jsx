@@ -29,7 +29,7 @@ const characters = ({ data }) => {
               </div>
 
               <div className="row">
-                <h4>appearance ({item.category})</h4>
+                <h4>appearance (breaking bad)</h4>
                 <p> 
                   {item.appearance.map((s) => (
                     <span className="season" key={s}>S{s}</span>
@@ -38,7 +38,16 @@ const characters = ({ data }) => {
               </div>
               
               <div className="row">
-                <span>{item.status}</span> 
+                <h4>appearance (better call soul)</h4>
+                <p> 
+                  {item.better_call_saul_appearance.length ? item.better_call_saul_appearance.map((s) => (
+                    <span className="season better-call" key={s}>S{s}</span>
+                  )) : "No appearance"}
+                </p>
+              </div>
+              <div className="row">
+                <h3>Status</h3>
+                <p>{item.status}</p> 
               </div>
             </div>
         </div>
