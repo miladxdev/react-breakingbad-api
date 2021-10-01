@@ -18,15 +18,15 @@ const Footer = () => {
                 </div>
 
                 <div className="footer-col">
+                    <p>Better Call Saul, a prequel series featuring Odenkirk, Banks, and Esposito reprising their Breaking Bad roles, debuted on AMC on February 8, 2015, and has been renewed for a final sixth season. </p>
+                </div>
+
+                <div className="footer-col">
                     <h3>First episode date:</h3> 
                     <p>January 20, 2008</p>
 
                     <h3>Created by:</h3> 
                     <p>Vince Gilligan</p>  
-                </div>
-
-                <div className="footer-col">
-                    <p>Better Call Saul, a prequel series featuring Odenkirk, Banks, and Esposito reprising their Breaking Bad roles, debuted on AMC on February 8, 2015, and has been renewed for a final sixth season. </p>
                 </div>
               </div>
 
@@ -35,6 +35,15 @@ const Footer = () => {
                     <img src={linkedin} alt="logo" width="50"/>             
                     <img src={twitter} alt="logo" width="50"/>             
                     <img src={youtube} alt="logo" width="50"/>             
+                </div>
+
+                <div className="footer-links">
+                    <a href="#!">Legal</a>
+                    <a href="#!">Privacy Center</a>
+                    <a href="#!">Privacy Policy</a>
+                    <a href="#!">Cookies</a>
+                    <a href="#!">About Ads</a> 
+                    <a className="right" href="#!">© 2021 Milad Gharibi</a>
                 </div>
             </div>
         </footer>

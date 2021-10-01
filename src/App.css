@@ -164,7 +164,7 @@ footer h3 {
 }
 footer .social {
   text-align: center;
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 .social img {
   filter: invert();
@@ -176,4 +176,24 @@ footer .social {
 
 .social img:hover {
   opacity: 1;
+}
+
+.footer-links {
+  margin-top: 4rem;
+}
+
+.footer-links a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  margin: 0 2rem;
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+
+.footer-links a:hover {
+  opacity: 1;
+}
+.footer-links .right {
+  float: right;
 }
