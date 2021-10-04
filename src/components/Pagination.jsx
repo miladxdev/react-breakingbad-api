@@ -1,17 +1,14 @@
-import {React, useState} from 'react'
+import React from 'react'
 
 const Pagination = ( {getOffset, offset} ) => {
 
-    const [page, setPage] = useState(0);
 
     function nextPage() {
         getOffset(prev => prev + 12);
-        setPage(prev => prev + 1);
     }
 
     function prevPage() {
         getOffset(prev => prev - 12);
-        setPage(prev => prev - 1);
     }
 
     return (
@@ -21,7 +18,7 @@ const Pagination = ( {getOffset, offset} ) => {
                 onClick={offset-12 > -1 ? prevPage : null} >Prev
             </button>
 
-            <button className="page">{page}</button>
+            <button className="page">{offset/12}</button>
 
             <button
                 className={offset+12 < 60 ? "next" : "next disable"} 

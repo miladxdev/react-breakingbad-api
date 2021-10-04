@@ -25,7 +25,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header getQuery={(q) => setQuery(q)} />
+      <Header getQuery={(q) => setQuery(q)} getOffset={(o) => setOffset(o)} />
       <Cards data={data} isLoading={isLoading} />
       <Pagination getOffset={(o) => setOffset(o)} offset={offset} />
       <Footer />
