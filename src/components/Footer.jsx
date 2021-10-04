@@ -4,6 +4,7 @@ import instagram from '../img/Circled_Instagram.png'
 import linkedin from '../img/Circled_Linkedin.png'
 import twitter from '../img/Circled_Twitter.png'
 import youtube from '../img/Circled_Youtube.png'
+
 const Footer = () => {
     return (
         <footer>

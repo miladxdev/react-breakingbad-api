@@ -1,11 +1,14 @@
 import React from "react";
+import Loading from './Loading';
 
-const characters = ({ data }) => {
+const characters = ({ data, isLoading }) => {
   
   return (
     <div className="page-wrapper">
+      {isLoading ? null : <Loading />}
+
       <div className="cards">
-  
+
       {data.map((item) => (
         <div className="card" key={item.char_id}>
             <img src={item.img} alt="profile" />
@@ -53,6 +56,7 @@ const characters = ({ data }) => {
             </div>
         </div>
       ))}
+
     </div>
     </div>
     
