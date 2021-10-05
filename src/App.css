@@ -5,7 +5,7 @@
 }
 
 ::-webkit-scrollbar {
-  width: 7px;
+  width: 8px;
 }
 ::-webkit-scrollbar-thumb {
   background: hsl(120, 100%, 20%);
@@ -37,13 +37,17 @@ header {
   margin-top: 4rem;
 }
 
-header img {
+.logo {
+  width: 500px;
+  max-width: 100%;
   display: block;
   margin: 0 auto 4rem auto;
 }
 
 #search-input {
   display: block;
+  width: 600px;
+  max-width: 100%;
   font-size: 2rem;
   margin: 0 auto 4rem auto;
   padding: 0.5rem 1rem;
@@ -54,14 +58,11 @@ header img {
 #search-input:focus {
   outline: 2px solid white;
 }
-.logo {
-  max-width: 400px;
-}
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  grid-gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 2fr));
+  grid-gap: 1.6rem;
   margin-bottom: 4rem;
 }
 
@@ -124,13 +125,11 @@ header img {
 }
 
 .season.better-call {
-  /* background: gold; */
   background-image: linear-gradient(-45deg, rgb(224, 191, 0), yellow);
   color: #121212;
 }
 
 .pagination {
-  /* border: 1px solid blue; */
   margin-bottom: 4rem;
   text-align: center;
 }
@@ -168,7 +167,6 @@ footer {
   background-position: center 80%;
   background-blend-mode: darken;
   padding: 7rem 0;
-  /* background: black; */
   color: white;
   border-top: solid hsl(120, 100%, 5%);
 }
@@ -212,13 +210,14 @@ footer .social {
 
 .footer-links {
   margin-top: 4rem;
+  text-align: center;
 }
 
 .footer-links a {
   display: inline-block;
   text-decoration: none;
   color: white;
-  margin: 0 2rem;
+  margin: 1rem 2rem;
   opacity: 0.5;
   transition: opacity 0.3s;
 }

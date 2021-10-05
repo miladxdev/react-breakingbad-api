@@ -12,18 +12,19 @@ const Header = ( {getQuery, getOffset} ) => {
 
     return (
         <header>
-            <img className="logo" src={logo} alt="logo" />
+            <div className="page-wrapper">
+                <img className="logo" src={logo} alt="logo" />
 
-            <input 
-                type="text"
-                name="search" 
-                id="search-input"
-                placeholder="Heisenberg"
-                value={text}
-                onChange={(e) => {onChange(e.target.value)}}
-            />
+                <input 
+                    type="text"
+                    name="search" 
+                    id="search-input"
+                    placeholder="Say my name..."
+                    value={text}
+                    onChange={(e) => {onChange(e.target.value)}}
+                />
+            </div>
         </header>
-        
     )
 }
 

@@ -40,11 +40,10 @@ const Footer = () => {
 
                 <div className="footer-links">
                     <a href="#!">Legal</a>
-                    <a href="#!">Privacy Center</a>
                     <a href="#!">Privacy Policy</a>
                     <a href="#!">Cookies</a>
                     <a href="#!">About Ads</a> 
-                    <a className="right" href="#!">© 2021 Milad Gharibi</a>
+                    <a href="#!">© 2021 Milad Gharibi</a>
                 </div>
             </div>
         </footer>
