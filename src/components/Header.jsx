@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
-import logo from "../img/logo.png"
+import logoUrl from "../img/logo.png"
+
 
 const Header = ( {getQuery, getOffset} ) => {
     const [text, setText] = useState('')
@@ -13,7 +14,10 @@ const Header = ( {getQuery, getOffset} ) => {
     return (
         <header>
             <div className="page-wrapper">
-                <img className="logo" src={logo} alt="logo" />
+                <img className="logo" 
+                    src={logoUrl} 
+                    alt="logo" 
+                />
 
                 <input 
                     type="text"

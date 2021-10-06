@@ -5,9 +5,7 @@ const characters = ({ data, isLoading }) => {
   
   return (
     <div className="page-wrapper">
-      {isLoading ? null : <Loading />}
-
-      <div className="cards">
+      {isLoading ? <div className="cards">
 
       {data.map((item) => (
         <div className="card" key={item.char_id}>
@@ -57,7 +55,9 @@ const characters = ({ data, isLoading }) => {
         </div>
       ))}
 
-    </div>
+    </div> : <Loading />}
+
+      
     </div>
     
   );

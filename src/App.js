@@ -5,6 +5,7 @@ import Cards from "./components/Cards";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Pagination from "./components/Pagination";
+import introUrl from "./snd/intro.mp3";
 
 function App() {
   const [data, setData] = useState([]);
@@ -22,6 +23,11 @@ function App() {
       setIsLoading(true);
     });
   }, [query, offset]);
+
+  useEffect(() => {
+    const intro = new Audio(introUrl);
+    intro.play();
+  }, []);
 
   return (
     <div className="App">

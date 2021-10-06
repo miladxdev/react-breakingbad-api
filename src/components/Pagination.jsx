@@ -18,7 +18,7 @@ const Pagination = ( {getOffset, offset} ) => {
                 onClick={offset-12 > -1 ? prevPage : null} >Prev
             </button>
 
-            <button className="page">{offset/12}</button>
+            <button className="page">{(offset/12)+1}</button>
 
             <button
                 className={offset+12 < 60 ? "next" : "next disable"} 
