@@ -1,70 +1,147 @@
-# Getting Started with Create React App
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://github.com/miladxdev/react-breakingbad-api">
+    <img src="src/img/logo.png" alt="Logo" width="150">
+  </a>
 
-## Available Scripts
+  <h3 align="center">React Breaking Bad Api</h3>
 
-In the project directory, you can run:
+  <p align="center">
+    Search for Breaking Bad Characters
+    <br />
+    <a href="https://breakingbadapi.com/documentation"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/miladxdev/react-breakingbad-api">Live Demo</a>
+    ·
+    <a href="https://github.com/miladxdev/react-breakingbad-api/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/miladxdev/react-breakingbad-api/issues">Request Feature</a>
+  </p>
+</p>
 
-### `npm start`
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgements">Acknowledgements</a></li>
+  </ol>
+</details>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<!-- ABOUT THE PROJECT -->
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+`screenshot`
 
-### `npm test`
+![product-screenshot]
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### [LIVE DEMO ☝](https://miladxdev.github.io/react-breakingbad-api/)
 
-### `npm run build`
+### About The Project
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This project is a website bulid with react. You can search for any Breaking Bad or Beter call saul tv series characters and see some cool details abut them. I used Breaking Bad Api for this project.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Built With
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
-### `npm run eject`
+- `HTML`
+- `CSS`
+- `JavaScript`
+- `React`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Installation
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Clone the repo
+   ```sh
+   git clone https://github.com/miladxdev/react-breakingbad-api.git
+   ```
+   <!-- USAGE EXAMPLES -->
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Usage
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+You can check `Breaking Bad Api`
+[Documentation »](https://breakingbadapi.com/documentation)
 
-## Learn More
+<!-- ROADMAP -->
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Roadmap
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+See the [open issues](https://github.com/miladxdev/react-breakingbad-api/issues) for a list of proposed features (and known issues).
 
-### Code Splitting
+<!-- CONTRIBUTING -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Contributing
 
-### Analyzing the Bundle Size
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1- Fork the Project
 
-### Making a Progressive Web App
+2- Create your Feature Branch
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+`git checkout -b feature/AmazingFeature`
 
-### Advanced Configuration
+3- Commit your Changes
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+`git commit -m 'Add some AmazingFeature'`
 
-### Deployment
+4- Push to the Branch
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+`git push origin feature/AmazingFeature`
 
-### `npm run build` fails to minify
+5- Open a Pull Request
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<!-- LICENSE -->
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+<!-- CONTACT -->
+
+## Contact
+
+`Milad Gharibi`
+
+Email: miladxdev@gmail.com
+
+Project Link: [github.com/miladxdev/react-breakingbad-api](https://github.com/miladxdev/react-breakingbad-api)
+
+[contributors-shield]: https://img.shields.io/github/contributors/miladxdev/react-breakingbad-api.svg?style=for-the-badge
+[contributors-url]: https://github.com/miladxdev/react-breakingbad-api/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/miladxdev/react-breakingbad-api.svg?style=for-the-badge
+[forks-url]: https://github.com/miladxdev/react-breakingbad-api/network/members
+[stars-shield]: https://img.shields.io/github/stars/miladxdev/react-breakingbad-api.svg?style=for-the-badge
+[stars-url]: https://github.com/miladxdev/react-breakingbad-api/stargazers
+[issues-shield]: https://img.shields.io/github/issues/miladxdev/react-breakingbad-api.svg?style=for-the-badge
+[issues-url]: https://github.com/miladxdev/react-breakingbad-api/issues
+[license-shield]: https://img.shields.io/github/license/miladxdev/react-breakingbad-api.svg?style=for-the-badge
+[license-url]: https://github.com/miladxdev/react-breakingbad-api/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://www.linkedin.com/in/itsmilad/
+[product-screenshot]: src/img/screenshot.png
